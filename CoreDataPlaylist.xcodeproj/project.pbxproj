@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8320CD671C702C3700199F19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD661C702C3700199F19 /* AppDelegate.swift */; };
-		8320CD691C702C3700199F19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD681C702C3700199F19 /* ViewController.swift */; };
 		8320CD6C1C702C3700199F19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8320CD6A1C702C3700199F19 /* Main.storyboard */; };
 		8320CD6E1C702C3700199F19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8320CD6D1C702C3700199F19 /* Assets.xcassets */; };
 		8320CD711C702C3700199F19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8320CD6F1C702C3700199F19 /* LaunchScreen.storyboard */; };
 		8320CD7C1C702C3700199F19 /* CoreDataPlaylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD7B1C702C3700199F19 /* CoreDataPlaylistTests.swift */; };
 		8320CD871C702C3700199F19 /* CoreDataPlaylistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD861C702C3700199F19 /* CoreDataPlaylistUITests.swift */; };
+		8320CD961C702C4000199F19 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD941C702C4000199F19 /* Model.xcdatamodeld */; };
+		8320CD991C7031E500199F19 /* Song+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD971C7031E500199F19 /* Song+CoreDataProperties.swift */; };
+		8320CD9A1C7031E500199F19 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD981C7031E500199F19 /* Song.swift */; };
+		8320CD9C1C70322B00199F19 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD9B1C70322B00199F19 /* Stack.swift */; };
+		8320CD9F1C70333400199F19 /* SongController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8320CD9E1C70333400199F19 /* SongController.swift */; };
+		834088951C7150D8005B3A60 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834088941C7150D8005B3A60 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,6 @@
 /* Begin PBXFileReference section */
 		8320CD631C702C3700199F19 /* CoreDataPlaylist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataPlaylist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8320CD661C702C3700199F19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8320CD681C702C3700199F19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8320CD6B1C702C3700199F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8320CD6D1C702C3700199F19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8320CD701C702C3700199F19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,12 @@
 		8320CD821C702C3700199F19 /* CoreDataPlaylistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataPlaylistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8320CD861C702C3700199F19 /* CoreDataPlaylistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPlaylistUITests.swift; sourceTree = "<group>"; };
 		8320CD881C702C3700199F19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8320CD951C702C4000199F19 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		8320CD971C7031E500199F19 /* Song+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Song+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8320CD981C7031E500199F19 /* Song.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		8320CD9B1C70322B00199F19 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		8320CD9E1C70333400199F19 /* SongController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongController.swift; sourceTree = "<group>"; };
+		834088941C7150D8005B3A60 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ../ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +107,13 @@
 		8320CD651C702C3700199F19 /* CoreDataPlaylist */ = {
 			isa = PBXGroup;
 			children = (
-				8320CD661C702C3700199F19 /* AppDelegate.swift */,
-				8320CD681C702C3700199F19 /* ViewController.swift */,
+				8320CD9D1C70323000199F19 /* CoreData */,
+				8320CD9E1C70333400199F19 /* SongController.swift */,
+				834088941C7150D8005B3A60 /* ListViewController.swift */,
 				8320CD6A1C702C3700199F19 /* Main.storyboard */,
+				8320CD941C702C4000199F19 /* Model.xcdatamodeld */,
 				8320CD6D1C702C3700199F19 /* Assets.xcassets */,
+				8320CD661C702C3700199F19 /* AppDelegate.swift */,
 				8320CD6F1C702C3700199F19 /* LaunchScreen.storyboard */,
 				8320CD721C702C3700199F19 /* Info.plist */,
 			);
@@ -123,6 +136,17 @@
 				8320CD881C702C3700199F19 /* Info.plist */,
 			);
 			path = CoreDataPlaylistUITests;
+			sourceTree = "<group>";
+		};
+		8320CD9D1C70323000199F19 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8320CD971C7031E500199F19 /* Song+CoreDataProperties.swift */,
+				8320CD981C7031E500199F19 /* Song.swift */,
+				8320CD9B1C70322B00199F19 /* Stack.swift */,
+			);
+			name = CoreData;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +280,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8320CD691C702C3700199F19 /* ViewController.swift in Sources */,
+				8320CD9F1C70333400199F19 /* SongController.swift in Sources */,
 				8320CD671C702C3700199F19 /* AppDelegate.swift in Sources */,
+				8320CD991C7031E500199F19 /* Song+CoreDataProperties.swift in Sources */,
+				8320CD961C702C4000199F19 /* Model.xcdatamodeld in Sources */,
+				8320CD9C1C70322B00199F19 /* Stack.swift in Sources */,
+				8320CD9A1C7031E500199F19 /* Song.swift in Sources */,
+				834088951C7150D8005B3A60 /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +513,7 @@
 				8320CD8D1C702C3700199F19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8320CD8E1C702C3700199F19 /* Build configuration list for PBXNativeTarget "CoreDataPlaylistTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +522,7 @@
 				8320CD901C702C3700199F19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8320CD911C702C3700199F19 /* Build configuration list for PBXNativeTarget "CoreDataPlaylistUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,8 +531,23 @@
 				8320CD931C702C3700199F19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8320CD941C702C4000199F19 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8320CD951C702C4000199F19 /* Model.xcdatamodel */,
+			);
+			currentVersion = 8320CD951C702C4000199F19 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8320CD5B1C702C3700199F19 /* Project object */;
 }
